@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration</title>
+</head>
+<body>
+	<h1>Register</h1>
+
+<form>
+	<p>
+		<label for="firstName">First Name: </label>
+		<input id="firstName" type="text" name="firstName" placeholder="John" required="true">
+		<label for="lastName">Last Name: </label>
+		<input id="lastName" type="text" name="lastName" placeholder="Smith" required="true">
+	</p>
+
+	<p>
+		<label for="gender">Male </label>
+		<input id="gender" type="radio" name="gender" value="Male">
+		<label for="gender">Female </label>
+		<input id="gender" type="radio" name="gender" value="Female">
+		<label for="gender">Other </label>
+		<input id="gender" type="radio" name="gender" value="Other">
+	</p>
+
+	<p>
+		<label for="email">Email: </label>
+		<input id="email" type="email" name="email" placeholder="your email" required="true">
+		<label for="password">Password: </label>
+		<input id="password" type="password" name="password" required="true" pattern=".{5,10}" required title="5 to 10 characters">
+	</p>
+
+	<p>
+		<label for="birthdayMonth">Birthday: </label>
+		<select id="birthdayMonth" name="birthdayMonth">
+			<option value="">Month</option>
+			<option value="january">January</option>			
+			<option value="february">February</option>			
+			<option value="march">March</option>			
+		</select>
+		<label for="bithdayDay"></label>
+		<select id="birthdayDay" name="bithdayDay">
+			<option value="">Day</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+		</select>
+		<label for="birthdayYear"></label>
+		<select id="birthdayYear" name="bithdayYear">
+			<option value="">Year</option>
+			<option value="2019">2019</option>
+			<option value="2018">2018</option>
+			<option value="2017">2017</option>
+		</select>
+	</p>
+
+	<p>
+		<label for="conditions">I agree to the terms and conditions</label>
+		<input id="conditions" type="checkbox" name="conditions" required="true">
+	</p>
+
+	<button>Submit</button>
+
+</form>
+
+</body>
+</html>

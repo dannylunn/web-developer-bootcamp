@@ -1,0 +1,26 @@
+td {
+	width: 100px;
+	height: 100px;
+}
+
+.middleRow {
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+.middleCol {
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+}
+
+.center {
+	border: 1px solid black;
+}
+
+h1 {
+	text-align: center;
+}
+
+table {
+	margin: auto;
+}

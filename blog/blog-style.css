@@ -1,0 +1,27 @@
+body {
+	margin: 20px auto;
+	padding: 0px 20px;
+	max-width: 700px;
+	width: 70%;
+	border: 20px solid #bdc3c7;
+	font-family: source sans pro;
+}
+h4 {
+	color: #3498db;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	font-size: 15px;
+}
+h2 {
+	text-transform: capitalize;
+	color: #2c3e50;
+	font-size: 30px;
+}
+.firstPar {
+	border-left: 6px solid #bdc3c7;
+	padding-left: 6px;
+}
+hr {
+	display: block;
+	border: 1px solid #bdc3c7;
+}

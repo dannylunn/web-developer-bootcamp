@@ -1,0 +1,18 @@
+h1 {
+	margin-left: 1.66%;
+	text-transform: uppercase;
+	color: #888888;
+	font-size: 35px;
+	font-family: Muli;
+	letter-spacing: 4px;
+	font-weight: 400;
+	width: 30%;
+	padding-bottom: 20px;
+	border-bottom: 2px solid #dddddd;
+}
+
+img {
+	width: 30%;
+	margin: 1.66%;
+	float: left;
+}
