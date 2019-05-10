@@ -14,7 +14,12 @@
     <style> 
       #header {
         background: url("https://images.unsplash.com/photo-1556139943-4bdca53adf1e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1268&q=80") center center / cover no-repeat;
-      }  
+      }
+      #card-img {
+        object-fit: cover;
+        object-position: center;
+        height: 200px;
+      }
     </style>
   </head>
   <body>
@@ -29,6 +34,46 @@
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius beatae necessitatibus tempora impedit, dolorum inventore error possimus iste praesentium iusto?</p>
       <a href="" class="btn btn-light">Do something</a>
       <a href="" class="btn btn-success">Buy now</a>
+    </section>
+
+    <section id="gallery">
+      <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-6 mb-4">
+              <div class="card">
+                <img id="card-img" src="https://source.unsplash.com/bQ-XtB9IWmo" alt="" class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Pattern</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, reprehenderit!</p>
+                  <a href="" class="btn btn-outline-success btn-sm">Download</a>
+                  <a href="" class="btn btn-outline-danger btn-sm"><i class="far fa-heart"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-6 mb-4">
+              <div class="card">
+                <img id="card-img" src="https://source.unsplash.com/jEqAeflfT5w" alt="" class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Pattern</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, reprehenderit!</p>
+                  <a href="" class="btn btn-outline-success btn-sm">Download</a>
+                  <a href="" class="btn btn-outline-danger btn-sm"><i class="far fa-heart"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-6 mb-4">
+              <div class="card">
+                <img id="card-img" src="https://source.unsplash.com/sZDsjL2UA8s" alt="" class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Pattern</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, reprehenderit!</p>
+                  <a href="" class="btn btn-outline-success btn-sm">Download</a>
+                  <a href="" class="btn btn-outline-danger btn-sm"><i class="far fa-heart"></i></a>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
     </section>
 
     <!-- Optional JavaScript -->
