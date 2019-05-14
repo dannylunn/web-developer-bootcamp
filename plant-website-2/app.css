@@ -1,3 +1,19 @@
 body {
-    background: #effff4
+    background: #effff4;
+}
+
+#mainNav .navbar-brand {
+    color: #ff70db;
+    font-family: Josefin Sans;
+    font-size: 1.5rem;
+}
+
+#mainNav .nav-link:hover {
+    color: rgba(0,0,0,.9);
+}
+
+#mainNav .nav-link {
+    font-family: Source Sans Pro;
+    font-weight: 300;
+    padding-top: 2px;
 }
