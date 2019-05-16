@@ -1,10 +1,10 @@
 body {
-    background: #ceffdd;
+    background: #b6e0d3;
+    font-family: Josefin Sans;
 }
 
 #mainNav .navbar-brand {
     color: #a5017c;
-    font-family: Josefin Sans;
     font-size: 1.5rem;
 }
 
@@ -13,9 +13,8 @@ body {
 }
 
 #mainNav .nav-link {
-    font-family: Source Sans Pro;
-    font-weight: 300;
-    padding-top: 2px;
+    font-weight: 400;
+    color: white;
 }
 
 #mainNav .navbar-toggler-icon {
@@ -24,4 +23,28 @@ body {
     vertical-align: top;
 }
 
+#textGraphic span {
+    color: #a5017c;
+}
 
+#textGraphic h1 {
+    font-weight: 300;
+    color: white;
+    font-size: 3rem;
+}
+
+@media (max-width: 1200px) {
+    #textGraphic h1 {
+        font-weight: 300;
+        color: white;
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    #textGraphic h1 {
+        font-weight: 300;
+        color: white;
+        font-size: 2rem;
+    }
+}
