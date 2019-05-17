@@ -1,5 +1,5 @@
 body {
-    background: #b6e0d3;
+    background: #d8ddd2;
     font-family: Josefin Sans;
 }
 
@@ -31,6 +31,12 @@ body {
     font-weight: 300;
     color: white;
     font-size: 3rem;
+}
+
+.contentImage {
+    object-fit: cover;
+    max-height: 600px;
+    width: 100%;
 }
 
 @media (max-width: 1200px) {
