@@ -1,5 +1,4 @@
 body {
-    background: #d8ddd2;
     font-family: Josefin Sans;
 }
 
@@ -9,12 +8,12 @@ body {
 }
 
 #mainNav .nav-link:hover {
-    color: rgba(0,0,0,.9);
+    color: #a5017c;
 }
 
 #mainNav .nav-link {
     font-weight: 400;
-    color: white;
+    color: rgba(0,0,0,.9);
 }
 
 #mainNav .navbar-toggler-icon {
@@ -25,11 +24,12 @@ body {
 
 #textGraphic span {
     color: #a5017c;
+    font-weight: 400;
 }
 
 #textGraphic h1 {
     font-weight: 300;
-    color: white;
+    color: #637054;
     font-size: 3rem;
 }
 
@@ -39,18 +39,28 @@ body {
     width: 100%;
 }
 
+#contentIcon {
+    font-size: 2rem;
+    padding-bottom: 10px;
+}
+
+.contentSections {
+    margin-bottom: 40px;
+}
+
+.navbar.scrolled {
+    background: #d2ecb2;
+    transition: background 500ms;
+}
+
 @media (max-width: 1200px) {
     #textGraphic h1 {
-        font-weight: 300;
-        color: white;
         font-size: 2.5rem;
     }
 }
 
 @media (max-width: 1000px) {
     #textGraphic h1 {
-        font-weight: 300;
-        color: white;
         font-size: 2rem;
     }
 }

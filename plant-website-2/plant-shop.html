@@ -11,6 +11,9 @@
     <!-- Font -->
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600,700" rel="stylesheet">
 
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
     <!-- My CSS -->
     <link rel="stylesheet" href="app.css">
 
@@ -40,7 +43,7 @@
 
     <section>
       <div class="container-fluid px-0">
-        <div class="row align-items-center">
+        <div class="row align-items-center contentSections">
           <div id="textGraphic" class="col-md-6">
             <div class="text-center d-none d-md-block pt-5">
               <h1>1<span>/</span>BEDROOM<span>/</span>GARDEN</h1>
@@ -59,18 +62,46 @@
 
     <section>
       <div class="container-fluid px-0">
-        <div class="row align-items-center">
-          <div class="col-md-6">
-            <img src="https://source.unsplash.com/70l1tDAI6rM" alt="" class="contentImage">
-          </div>
-          <div class="col-md-6 text-center">
+        <div class="row align-items-center contentSections">
+          <div class="col-md-6 text-center order-first order-md-last mb-4 mb-md-0">
             <div class="row justify-content-center">
               <div class="col-8 col-md-10">
                   <h2>Monsterra</h2>
-                  <i class="fas fa-leaf"></i>
+                  <i id="contentIcon" class="fas fa-leaf"></i>
                   <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis iure aliquam culpa aperiam et ipsa voluptatem tempore. Corporis commodi consectetur sed, quia fugiat odio maiores explicabo aut ipsa reiciendis error quidem dolore deserunt labore quos itaque! Placeat commodi in incidunt.</p>
               </div>
             </div>
+          </div>
+          <div class="col-md-6">
+            <img src="https://source.unsplash.com/KpuWtiszFQw" alt="" class="contentImage">
+          </div>
+        </div>
+        <div class="row align-items-center contentSections">
+          <div class="col-md-6 text-center mb-4 mb-md-0">
+            <div class="row justify-content-center">
+              <div class="col-8 col-md-10">
+                  <h2>Monsterra</h2>
+                  <i id="contentIcon" class="fas fa-leaf"></i>
+                  <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis iure aliquam culpa aperiam et ipsa voluptatem tempore. Corporis commodi consectetur sed, quia fugiat odio maiores explicabo aut ipsa reiciendis error quidem dolore deserunt labore quos itaque! Placeat commodi in incidunt.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img src="https://source.unsplash.com/gSQbip5HHuc" alt="" class="contentImage">
+          </div>
+        </div>
+        <div class="row align-items-center contentSections">
+          <div class="col-md-6 text-center order-first order-md-last mb-4 mb-md-0">
+            <div class="row justify-content-center">
+              <div class="col-8 col-md-10">
+                  <h2>Monsterra</h2>
+                  <i id="contentIcon" class="fas fa-leaf"></i>
+                  <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis iure aliquam culpa aperiam et ipsa voluptatem tempore. Corporis commodi consectetur sed, quia fugiat odio maiores explicabo aut ipsa reiciendis error quidem dolore deserunt labore quos itaque! Placeat commodi in incidunt.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img src="https://source.unsplash.com/70l1tDAI6rM" alt="" class="contentImage">
           </div>
         </div>
       </div>
@@ -82,5 +113,15 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <script>
+      $(function () {
+        $(document).scroll(function() {
+          var $nav = $("#mainNav");
+          $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+        });
+      });
+    </script>
+  
   </body>
 </html>
