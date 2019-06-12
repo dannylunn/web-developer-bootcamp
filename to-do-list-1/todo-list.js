@@ -5,10 +5,21 @@ setTimeout(function(){
 
   while(input !== "quit"){
     if(input === "new"){
-      todos.push(prompt("Add a todo"));
+      var newTodo = prompt("Add a todo");
+      todos.push(newTodo);
+      console.log(newTodo + " added to list");
     }
     else if(input === "list"){
-      console.log(todos)
+      console.log("***********");
+      for(var i = 0; i < todos.length; i++){
+        console.log(i + ": " + todos[i]);
+      }
+      console.log("***********");
+    }
+    else if(input === "delete"){
+      var removeIndex = prompt("Which index would you like to delete");
+      todos.splice(removeIndex,1);
+      console.log("Todo Removed");
     }
     input = prompt("What would you like to do?");
   }
