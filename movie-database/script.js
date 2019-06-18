@@ -20,12 +20,14 @@ var movie = [
   }
 ];
 
-movie.forEach(function(){
-  var title = movie.title;
-  var rating = movie.rating;
-  var seen = "watched"
-  if (movie.watched = false){
-    seen = "not seen"
+for(var i = 0; i < movie.length; i++){
+  var title = movie[i].title;
+  var rating = movie[i].rating;
+  if(movie[i].watched){
+    var seen = "watched"
   }
+  else{
+    var seen = "not watched"
+  };
   console.log("You have " + seen + ' "' + title + '" - ' + rating)
-})
+}
