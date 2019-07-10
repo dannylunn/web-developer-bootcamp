@@ -1,0 +1,24 @@
+body {
+  background: #232323;
+}
+
+h1 {
+  color: white;
+  background: steelblue;
+}
+
+#menuBar {
+  background: white;
+}
+
+.square {
+  width: 30%;
+  padding-bottom: 30%;
+  float: left;
+  margin: 1.66%;
+}
+
+#container {
+  width: 600px;
+  margin: 20px auto;
+}
