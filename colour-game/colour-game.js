@@ -38,7 +38,9 @@ reset.addEventListener("click", function(){
   for(var i = 0; i < colours.length; i++){
     squares[i].style.backgroundColor = colours[i]
   };
-  header.style.backgroundColor = "rgb(70, 130, 180)"
+  header.style.backgroundColor = "steelblue"
+  this.textContent = "New Colours"
+  message.textContent = ""
 })
 
 easyBtn.addEventListener("click", function(){
@@ -56,7 +58,7 @@ easyBtn.addEventListener("click", function(){
       squares[i].style.display = "none"
     }
   };
-  header.style.backgroundColor = "rgb(70, 130, 180)"
+  header.style.backgroundColor = "steelblue"
 })
 
 hardBtn.addEventListener("click", function(){
@@ -70,7 +72,7 @@ hardBtn.addEventListener("click", function(){
     squares[i].style.backgroundColor = colours[i];
     squares[i].style.display = "block"
   };
-  header.style.backgroundColor = "rgb(70, 130, 180)"
+  header.style.backgroundColor = "steelblue";
 })
 
 function squaresColour(colour){
