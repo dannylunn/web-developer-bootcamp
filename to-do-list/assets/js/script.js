@@ -1,9 +1,9 @@
-$("ui").on("click", "li", function(){
+$("ul").on("click", "li", function(){
   $(this).toggleClass("strikethrough");
   console.log('clicked');
 });
 
-$("li span").on("click", function(event){
+$("span").on("click", function(event){
   event.stopPropagation();
   $(this).parent().fadeOut(500, function(){
     $(this).remove();
