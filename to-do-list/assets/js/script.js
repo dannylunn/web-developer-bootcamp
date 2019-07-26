@@ -1,6 +1,5 @@
 $("ul").on("click", "li", function(){
   $(this).toggleClass("strikethrough");
-  console.log('clicked');
 });
 
 $("ul").on("click", "li span", function(event){
@@ -13,7 +12,11 @@ $("ul").on("click", "li span", function(event){
 $("input[type='text']").keypress(function(event){
   if(event.which === 13){
     var input = $(this).val();
-    $("ul").append("<li><span>X </span>" + input + "</li>");
+    $("ul").append("<li><span><i class='fas fa-trash-alt'></i></span>" + input + "</li>");
     $(this).val("");
   };
 });
+
+$(".fa-plus").click(function(){
+  $("input").fadeToggle();
+})
