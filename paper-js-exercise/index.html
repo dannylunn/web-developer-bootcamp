@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Triangles</title>
+  <script type="text/javascript" src="js/paper-full.js"></script>
+  <script type="text/paperscript" canvas="myCanvas">
+    //dimensions of grid (e.g. a 5x10 grid)
+    var rows = 10;
+    var cols = 10;
+
+    //center coordinates of any circle being drawn
+    var x;
+    var y;
+
+    //center coordinates of first circle being drawn
+    var xstart = 50;
+    var ystart = 50;
+
+    // distance between center coordinates
+    var xspacing = 100;
+    var yspacing = 100;
+
+    var radius = 10;
+    var fillColor = 'orange';
+
+    // create grid and draw circles
+    for(var row = 1; row <= rows; row++) {
+        y = ystart + (row - 1) * yspacing;
+
+        for(var col = 1; col <= cols; col++) {
+            fillColor = "rgb(250, " + (100 + (col*10)) + ", 40)";
+            x = xstart + (col - 1) * xspacing;
+            var triangle = new Path.RegularPolygon(new Point(x, y), 3, radius);
+            triangle.style = {
+              fillColor: fillColor,
+            };
+            triangle.rotate(Math.floor(Math.random() * 360 + 1));
+        }
+    }
+  </script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="myCanvas" resize></canvas>
+</body>
+</html>
