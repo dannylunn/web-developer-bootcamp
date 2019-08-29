@@ -5,8 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Circles</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="paper-full.js"></script>
+
+  <script type="text/paperscript" canvas="myCanvas">
+    var randomPoint = Point.random();
+    var maxPoint = view.size.width + ", " + view.size.height;
+    console.log(maxPoint);
+    function onKeyDown(event) {
+      var circle = new Path.Circle(new Point(100, 70), 500);
+      circle.fillColor = 'black';
+    }
+  </script>
 </head>
 <body>
+  <canvas id="myCanvas" resize></canvas>
   
 </body>
 </html>
